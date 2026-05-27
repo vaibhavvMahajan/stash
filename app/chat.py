@@ -33,7 +33,7 @@ def call_mcp(tool_name: str, args: dict, user_id: int) -> str:
 
 def chat(messages: list, user_id: int) -> str:
     model = genai.GenerativeModel(
-        model_name="gemini-2.0-flash",
+        model_name="gemini-2.0-flash-lite",
         tools=[{"function_declarations": TOOLS}]
     )
     
